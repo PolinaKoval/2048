@@ -1,7 +1,7 @@
-function GameManager(size, Actuator, bestScore) {
+function GameManager(size, Actuator) {
   this.size           = size; // Size of the grid
   this.actuator       = new Actuator;
-  this.bestScore      = bestScore
+  this.bestScore      = 0;
   this.startTiles     = 2;
 }
 
