@@ -1,11 +1,9 @@
 const Game = require("./game");
-const fileName = "./strategies/blindStrategies1.json";
+const fileName = "./strategies/blindStrategies/blindStrategies1.json";
 const strategies = require(fileName);
 const fs = require("fs");
 const ss = require("simple-statistics");
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min;
-}
+
 const runGame = (game, matrix) => {
     game.setup();
     let done = false;
@@ -60,6 +58,6 @@ for(let i = 0; i< strategies.length;i++) {
 }
 
 const json = JSON.stringify(strategies2);
-fs.writeFileSync("./strategies/blindStrategies2.json", json);
+fs.writeFileSync("./strategies/blindStrategies/blindStrategies2.json", json);
 
 console.log(strategies2.length);
