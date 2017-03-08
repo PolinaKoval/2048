@@ -1,1 +1,3 @@
 .sass-cache/
+.gym/node_modules/*
+.gym\node_modules\*
